@@ -6,11 +6,13 @@
     <title>TBOY. (Tharul Bandara) | Photographer | Graphics Designer | Editor | Developer</title>
     <link rel="icon" href="Images/Untitled-1.png">
     <link rel="stylesheet" href="styles.css">
+    
     <script src="script.js" defer></script>  
     <script src="https://kit.fontawesome.com/129050527d.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=menu" />
 </head>
-<body>
+<body id="fullBody">
+    <div class="full"></div>
     <nav class="navbar">
         <ul class="navbtns">
             <li class="logo" ><h3>TBOY.</h3> </li>
@@ -18,7 +20,7 @@
             <li class="secondlink"><a class="link-tag"  href="#page2">About</a></li>
             <li class="thirdlink"><a  class="link-tag" href="#page3">Projects</a></li>
             <li class="forthlink"><a  class="link-tag" href="#sectionContacts">Contact</a></li>
-            <li onclick=sidebarOpen() id="menubtn"><svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px" fill="#FFFFFF"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></li>
+            <li onclick=bodyCheck() id="menubtn"><svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px" fill="#FFFFFF"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></li>
         </ul>
     </nav>
     <nav class="sidebar" id="sideBar">

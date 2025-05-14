@@ -34,6 +34,8 @@ section {
     min-height: 100vh;
     width: auto;
 }
+
+
 p::selection {
     background-color: #ffffff;
     color: #000000;
@@ -108,12 +110,11 @@ h3::selection {
     transition: transform 0.3s ease;
     
 }
-#menubtn {
-    display:none;
-}
+
 
 .sidebar {
-    display: none;
+    transform: translateX(500px);
+    display: flex;
     z-index: 999;
     top: 0;
     right: 0%;
@@ -123,7 +124,8 @@ h3::selection {
     padding-left: 30px;
     width: 300px;
     height: 100vh;
-    position: fixed;  
+    position: fixed;
+    transition: all 0.3s ease;  
 }
 
 .sidebtns {
@@ -598,4 +600,91 @@ img {
     color: #000000;
     margin-top: 100px;
     font-weight: bold;
+}
+#menubtn {
+    display: none;
+    transition: all 0.3s ease;
+   
+    
+}
+@keyframes sidebarPopup  {
+    0%{
+        transform: translateX(500px);
+    }
+   
+}
+
+
+
+/* Media queries*/
+
+/* xs */
+@media (max-width: 475px) {
+
+}
+
+/* sm */
+@media (max-width: 640px) {
+
+}
+
+/* md */
+@media (max-width: 768px) {
+     #menubtn {
+        display: none;
+    }
+}
+
+/* lg */
+@media all and (max-width: 1024px) {
+
+    .navbtns li:nth-child(2){
+        display: none;
+    }
+     .navbtns li:nth-child(3){
+        display: none;
+    }
+     .navbtns li:nth-child(4){
+        display: none;
+    }
+     .navbtns li:nth-child(5){
+        display: none;
+    }
+    .pg2 img {
+    width: 339px;
+    }
+    .prog {
+    width: 150px;
+    height: 150px;
+    }
+
+     #menubtn {
+        display: flex;
+    }
+  
+  
+  
+}
+
+/* xl */
+@media (max-width: 1280px) {
+  .navbtns a {
+    position: relative;
+    color: #ffff;
+    text-decoration: none;
+    font-size: 17px
+}
+
+.navbtns li {
+    margin-right: 70px;
+}
+
+.pg2 img {
+    width: 539px;
+}
+.prog {
+    width: 250px;
+    height: 250px;
+}
+  
 }

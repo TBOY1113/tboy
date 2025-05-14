@@ -32,13 +32,22 @@ workNames.forEach((workName)=> {
 const menubtn = document.getElementById('menubtn');
 const sideBar = document.getElementById('sideBar');
 const closebtn = document.getElementById('closebtn');
+const body = document.getElementById('fullBody');
 
 menubtn.addEventListener('click', ()=> {
 
-    sideBar.style.display = 'flex';
+    sideBar.style.transform = 'translateX(10px)';
+    
+        
+    
 });
 
 closebtn.addEventListener('click', ()=> {
 
-    sideBar.style.display = 'none';
+    
+    sideBar.style.transform = 'translateX(500px)';
+    
 });
+
+
+ 
