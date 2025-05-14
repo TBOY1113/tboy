@@ -1,0 +1,598 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+* {
+    padding: 0%;
+    scroll-behavior: smooth;
+    margin: 0%;
+    
+}
+
+:root {
+    --clr-white: #ffff;
+    --clr-blck: #000000;
+
+    --ff-main: "Montserrat", sans-serif;
+
+    --fw-main: 700;
+    --fw-sub: 500;
+
+    --fs-20: 20px;
+    --fs-14: 14px;
+    --fs-36: 36px;
+    --fs-50: 50px;
+
+}
+
+body {
+    
+  
+    font-family:var(--ff-main);
+    background-color: #080808;
+}
+
+section {
+    padding: 20px;
+    min-height: 100vh;
+    width: auto;
+}
+p::selection {
+    background-color: #ffffff;
+    color: #000000;
+}
+h2::selection {
+    background-color:#ffff;
+    color:#000000;
+}
+h4::selection {
+    background-color:#ffff;
+    color:#000000;
+}
+h3::selection {
+    background-color:#ffff;
+    color:#000000;
+}
+/*nvagation bar styles*/
+
+
+
+.navbar {
+    z-index: 999;
+    background-color: #ffffff00;
+    backdrop-filter: blur(10px);
+    padding: 10px;
+    padding-left: 50px;
+    width: 100%;
+    position: fixed;  
+}
+
+.navbtns {
+    width: 100%;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.navbtns li {
+    margin-right: 90px;
+}
+
+.navbtns li:first-child {
+    color: #ffff;
+    font-size: var(--fs-36);
+    margin-right:auto
+}
+
+.navbtns a {
+    position: relative;
+    color: #ffff;
+    text-decoration: none;
+    font-size: var(--fs-20);
+}
+
+.navbtns a::after {
+    content:'';
+    position: absolute;
+    background: #ffff;
+    left: 0%;
+    bottom: -6px;
+    width: 100%;
+    height: 2px;
+    transform:scaleX(0);
+    transform-origin: right;
+    transition: transform 0.3s ease;
+    
+}
+
+.navbtns a:hover::after {
+    transform-origin:left;
+    transform: scaleX(1);
+    transition: transform 0.3s ease;
+    
+}
+
+.sidebar {
+    display: none;
+    z-index: 999;
+    top: 0;
+    right: 0%;
+    background-color: #ffffff00;
+    backdrop-filter: blur(10px);
+    padding: 10px;
+    padding-left: 30px;
+    width: 300px;
+    height: 100vh;
+    position: fixed;  
+}
+
+.sidebtns {
+    width: 100%;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+
+.sidebtns a {
+    color: #ffff;
+    text-decoration: none;
+    font-size: var(--fs-20);
+}
+
+.sidebtns li {
+    margin: 10px;
+}
+
+.sidebtns svg {
+    margin-bottom: 10px;
+}
+
+
+
+
+
+/* Page 01 */
+
+.pg1 {
+    background-image: url(Images/pinchoflight.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+/*Details*/ 
+
+.wlc {
+    width: 100%;
+   height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+h2 {
+    
+    color: #ffff;
+    font-size: var(--fs-36);
+}
+
+p {
+    color: #ffff;
+}
+
+.pg1 h2,
+.pg1 p {
+    transform: translateY(-150px);
+}
+
+.work-btn {
+    width:170px;
+    height: 50px;
+    border: none;
+    border-radius: 50px;
+    font-size: var(--fs-20);
+    font-family: var(--ff-main);
+    font-weight: bol;
+    color: #000000;
+    background-color: #ffff;
+    margin-bottom: 100px;  
+    transition: all 0.5s ease; 
+}
+
+.work-btn:hover {
+    transition: all 0.3s ease;
+    font-weight: 500;
+    cursor: pointer;
+   scale: 105%;
+   box-shadow: 0px 0px 50px 10px rgba(255, 255, 255, 0.422);
+}
+h4 {
+    color: #ffffff;
+    text-align: center;
+    font-size: large;
+    font-weight: lighter;
+}
+
+span {
+    font-weight: bold;
+}
+
+
+.work-btn,
+h4,
+span {
+    transform: translateY(200px);
+}
+
+
+/* Page 02 */
+
+.pg2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(Images/hanginthere.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  
+}
+    
+
+.pic-name{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+.pg2 h2 {
+    margin-top: 50px;
+    text-align: center;
+    line-height: 30px;
+    
+}
+
+.pg2 h2 span {
+    font-size: var(--fs-20);
+    font-weight: 100;
+    font-style: italic;
+}
+.details {
+    margin-left: 50px;
+}
+img {
+    width: 639px;
+    width: 639px;
+}
+
+.pg2 h3 {
+    margin-bottom: 50px;
+    color: #ffff;
+}
+
+.pg2 h3 span {
+    font-size: var(--fs-20);
+    font-weight: 100;
+    font-style: italic;
+}
+
+.cv-work {
+    margin-top: 10px;
+}
+
+.details button {
+    position: relative;
+    width:170px;
+    height: 50px;
+    border: none;
+    border-radius: 50px;
+    font-size: var(--fs-20);
+    font-family: var(--ff-main);
+    font-weight: bol;
+    color: #000000;
+    background-color: #ffff;
+    margin-bottom: 100px;  
+    transition: all 0.5s ease; 
+    overflow: hidden;
+}
+
+.details button:hover {
+    cursor: pointer;
+    scale: 110%;
+    box-shadow: 0px 0px 50px 5px #ffff;
+}
+
+.details button::before {
+    top: 50%;
+    content: "My CV";
+    position: absolute;
+    transform: translate(-50%,-50%);
+    transition: all 0.5s ease; 
+
+}
+
+.details button:hover::before {
+    top: -150%;
+    transition: all 0.5s ease; 
+    
+}
+
+.details button::after {
+    top: 150%;
+    position:absolute;
+    content: "Download";
+    color: #000000;
+    transform: translate(-50%,-50%);
+    transition: all 0.5s ease; 
+}
+
+.details button:hover::after {
+    top: 50%;
+    transition: all 0.5s ease; 
+    
+}
+
+/*page 3*/ 
+
+.pg3 {
+    padding-top: 50px;
+    background-image: url(Images/sightofpink.webp);
+    background-color: #232323;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: all 0.3s ease;    
+}
+
+.wrapperPageThree {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.topseg {
+    display: inline-block;
+}
+.topseg h2 {
+    font-weight: 800;
+    margin-bottom: 40px;
+    
+}
+
+.works li a {
+    color: #ffffff;
+    list-style: none;
+    font-size: var(--fs-20);
+    text-decoration: none;
+    font-weight:300;
+}
+
+.works li  {
+    color: #ffffff;
+    list-style: none;
+    font-size: var(--fs-20);
+    text-decoration: none;
+    font-weight:300;
+}
+
+
+.works li {
+        list-style: none;
+        margin-right: 50px;
+        transition: all 0.3s ease;
+
+}
+
+.works li:hover {
+    cursor: pointer;
+    scale: 110%;
+    transition: all 0.3s ease;
+}
+
+
+.topseg {
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.works {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.details-works {
+    opacity: 1;
+    display:flex;
+    align-items:center;
+    justify-content: space-evenly;   
+    margin-top: 10px; 
+    width: 90%;
+    height: 700px;   
+    
+}
+
+.prog {
+    
+    background-position: center; 
+    border-radius: 5px;
+    height: 350px;
+    width:350px;
+    background:cyan;
+    transition: all 0.5s;
+}
+
+
+.details-works div:hover {
+    box-shadow: 0px 0px 100px 10px black;
+    scale:150%;
+    transition: all 0.3s;
+    transition-delay: 0.3s;
+    
+}
+
+#progsInterfaceGraphic div:nth-child(1) {
+    background:url(Images/13th.webp);
+    background-size: cover;
+    position: relative;
+    animation: popoutwork 1s;
+    
+}
+
+#progsInterfaceGraphic div:nth-child(2) {
+    background:url(Images/coming-soon.webp);
+    background-size: cover;
+    animation: popoutwork 0.8s;
+}
+
+#progsInterfaceGraphic div:nth-child(3) {
+    background:url(Images/inde.webp);
+    background-size: cover;
+    animation: popoutwork 0.6s;
+}
+
+#progsInterfaceGraphic div:nth-child(4) {
+    background:url(Images/smurf.webp);
+    background-size: cover;
+    animation: popoutwork 0.4s;
+}
+
+#progsInterfacePhotography {
+    display:none;
+}
+
+#progsInterfacePhotography div:nth-child(1) {
+    background:url(Images/racingeyes.webp);
+    background-size: cover;
+    position: relative;   
+    background-position: center; 
+    animation: popoutwork 1s;
+}
+
+#progsInterfacePhotography div:nth-child(2) {
+    background:url(Images/pinchoflight.webp);
+    background-size: cover;
+    background-position: center;
+    animation: popoutwork 0.8s; 
+}
+
+#progsInterfacePhotography div:nth-child(3) {
+    background:url(Images/hanginthere.webp);
+    background-size: cover;
+    background-position: center;
+    animation: popoutwork 0.6s; 
+}
+
+#progsInterfacePhotography div:nth-child(4) {
+    background:url(Images/sightofpink.webp);
+    background-size: cover;
+    background-position: center;
+    animation: popoutwork 0.4s; 
+}
+
+#progsInterfaceVideography {
+    display:none;
+}
+
+#progsInterfaceVideography div:nth-child(1) {
+    background:url(Images/movie.webp);
+    background-size: cover;
+    position: relative;   
+    background-position: center; 
+    animation: popoutwork 1s;
+}
+
+#progsInterfaceVideography div:nth-child(2) {
+    background:url(Images/coming-soon.webp);
+    background-size: cover;
+    background-position: center;
+    animation: popoutwork 0.8s; 
+}
+
+#progsInterfaceVideography div:nth-child(3) {
+    background:url(Images/hunters.webp);
+    background-size: cover;
+    background-position: center;
+    animation: popoutwork 0.6s; 
+}
+
+#progsInterfaceVideography div:nth-child(4) {
+    background:url(Images/daday.webp);
+    background-size: cover;
+    background-position: center;
+    animation: popoutwork 0.4s; 
+}
+
+
+
+@keyframes popoutwork {
+    0% {
+        transform:translateX(100px);
+        filter: blur(50px)
+    }
+    100% {
+        
+    }
+}
+
+/* page 4 */
+
+.sectionContacts {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* background-color: rgb(22, 22, 22); */
+    background-color: #ffff;
+    height: 300px;
+    width: 100%;
+}
+
+.sectionContacts h2 {
+    font-size: 100px;
+    color: #000000;
+}
+
+.sectionContacts div {
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.sectionContacts div p {
+    color: #000000;
+    font-size: 15px;
+    margin-left: 100px;
+    font-weight: lighter;
+    transition-delay:2s ;
+    transition: all 0.3s ease;
+    
+}
+
+.sectionContacts div p:hover {
+    font-weight: bolder;
+    font-size: 25px;
+    transition-delay:2s ;
+    transition: all 0.3s ease;
+}
+
+.sectionContacts p i {
+    font-size: 25px;
+    margin-right: 10px;
+}
+
+.rightsWeb {
+    color: #000000;
+    margin-top: 100px;
+    font-weight: bold;
+}
