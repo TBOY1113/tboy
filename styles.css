@@ -108,7 +108,9 @@ h3::selection {
     transition: transform 0.3s ease;
     
 }
-
+#menubtn {
+    display:none;
+}
 
 .sidebar {
     display: none;
