@@ -74,13 +74,13 @@ h3::selection {
     justify-content: flex-end;
 }
 .navbtns li {
-    margin-right: 90px;
+    margin-right: 100px;
 }
 
 .navbtns li:first-child {
     color: #ffff;
     font-size: var(--fs-36);
-    margin-right:auto
+    margin-right:auto;
 }
 
 .navbtns a {
@@ -586,7 +586,6 @@ img {
 
 .sectionContacts div p:hover {
     font-weight: bolder;
-    font-size: 25px;
     transition-delay:2s ;
     transition: all 0.3s ease;
 }
@@ -618,74 +617,135 @@ img {
 
 /* Media queries*/
 
-/* xs */
-@media (max-width: 475px) {
+/*Laptops-L*/ 
+@media (max-width: 1440px){
+.pg2 img {
+        width: 539px;
+        height: 539px;
+    }
+
+.prog {
+        width: 300px;
+        height: 300px;
+    }
 
 }
 
-/* sm */
-@media (max-width: 640px) {
-
+/*Laptops 1024*/
+@media (max-width: 1024px){
+.navbtns a{
+    font-size: 18px;
 }
 
-/* md */
-@media (max-width: 768px) {
-     #menubtn {
-        display: none;
-    }
+.navbtns li:nth-child(2),
+         li:nth-child(3),
+         li:nth-child(4),
+         li:nth-child(5){
+            margin-right:100px;
 }
-
-/* lg */
-@media all and (max-width: 1024px) {
-
-    .navbtns li:nth-child(2){
-        display: none;
-    }
-     .navbtns li:nth-child(3){
-        display: none;
-    }
-     .navbtns li:nth-child(4){
-        display: none;
-    }
-     .navbtns li:nth-child(5){
-        display: none;
-    }
-     #menubtn {
-        display: flex;
-    }
-
-    .pic-name h2 {
-        font-size: 25px;
-    }
-     .pic-name h2 span {
-        font-size: 15px;
-    }
-    .pg2 img {
-    width: 439px;
+.pg2 h2 {
+    font-size: 25px;
 }
-
-   
-}
-
-/* xl */
-@media (max-width: 1280px) {
-  .navbtns a {
-    position: relative;
-    color: #ffff;
-    text-decoration: none;
-    font-size: 17px
-}
-
-.navbtns li {
-    margin-right: 70px;
+.pg2 h2 span {
+    font-size: 15px;
 }
 
 .pg2 img {
-    width: 539px;
+    width: 439px;
+    height: 439px;
+}
+.pg3 {
+    height: 200vh;
 }
 .prog {
-    width: 250px;
-    height: 250px;
+        width: 325px;
+        height: 325px;
+        margin-top: 20px;
+    }
+
+
+.details-works{
+    
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: space-evenly;   
+    margin-top: 50px; 
+    width: 100%;
+    height: 95%;   
 }
-  
+
+.icon {
+    scale: 80%;
+
+}
+
+.sectionContacts div p {
+    margin-left: 50px;
+}
+
+}
+
+
+/*Tablet*/
+@media (max-width: 768px){
+.navbtns li:nth-child(2),
+.navbtns li:nth-child(3),
+.navbtns li:nth-child(4),
+.navbtns li:nth-child(5){
+    display: none;
+}
+#menubtn{
+    display: flex;
+}
+
+.pg2 {
+    height: 150vh;
+    flex-direction:column ;
+}
+
+.details {
+    margin-top: 50px;  
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+}
+
+.details button {
+    align-self: center;
+}
+.sectionContacts{
+    height: 390px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.sectionContacts div {
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+.sectionContacts div p {
+    margin: 10px;
+}
+
+.sectionContacts h2 {
+    font-size: 70px;
+}
+.rightsWeb {
+    margin-top: 40px;
+}
+}
+
+/*Mobile L*/
+@media (max-width: 425px){
+.pic-name img {
+    width: 339px;
+    height:339px;
+}
 }
