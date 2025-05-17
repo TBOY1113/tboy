@@ -650,20 +650,21 @@ img {
      .navbtns li:nth-child(5){
         display: none;
     }
-    .pg2 img {
-    width: 339px;
-    }
-    .prog {
-    width: 150px;
-    height: 150px;
-    }
-
      #menubtn {
         display: flex;
     }
-  
-  
-  
+
+    .pic-name h2 {
+        font-size: 25px;
+    }
+     .pic-name h2 span {
+        font-size: 15px;
+    }
+    .pg2 img {
+    width: 439px;
+}
+
+   
 }
 
 /* xl */
