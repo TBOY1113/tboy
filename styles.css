@@ -638,11 +638,11 @@ img {
 }
 
 .navbtns li:nth-child(2),
-         li:nth-child(3),
-         li:nth-child(4),
-         li:nth-child(5){
-            margin-right:100px;
-}
+.navbtns li:nth-child(3),
+.navbtns li:nth-child(4),
+.navbtns li:nth-child(5){
+        margin-right:100px;
+} 
 .pg2 h2 {
     font-size: 25px;
 }
@@ -740,12 +740,134 @@ img {
 .rightsWeb {
     margin-top: 40px;
 }
+
+.wrapperPageThree{
+    align-items: center;
+    justify-content: center;
+}
 }
 
 /*Mobile L*/
 @media (max-width: 425px){
 .pic-name img {
-    width: 339px;
-    height:339px;
+    width: 300px;
+    height:300px;
+}
+
+.pg2 h2 {
+    font-size: 20px;
+}
+.pg2 h2 span {
+    font-size: 10px;
+}
+.works li {
+    font-size:15px;  
+}
+.works li:nth-child(1),
+.works li:nth-child(2){
+    margin-right:25px;
+}
+.works li:nth-child(3){
+    margin-right:0px;
+}
+.prog {
+    width:300px;
+    height:300px;
+}
+.sectionContacts h2 {
+    margin-top: 20px;
+    font-size:50px;
+}
+
+.pg2 h2 {
+    font-size: 20px;
+}
+.pg2 h2 span {
+    font-size: 15px;
+}
+.rightsWeb {
+    font-size:15px;
+}
+.details {
+    margin-left:25px;
+}
+.cv-work {
+    font-size:15px;
+}
+.navbar {
+    padding-left:20px;
+}
+.navbtns li {
+    margin-right:50px;
+}
+}
+
+/* Mobile M*/
+@media (max-width: 375px){
+.navbtns li:first-child {
+    font-size:30px;
+}
+.navbar {
+    padding-left:20px;
+}
+.navbtns li {
+    margin-right:30px;
+}
+.pg1 h2 {
+    font-size: 30px;
+}
+.details{
+    margin-left:0px;
+    margin-top:20px;
+}
+.details h3 {
+    margin-left:0px;
+    margin-top:20px;
+    text-align: center;
+}
+.cv-work {
+    align-self: center;
+}
+.pg2 img {
+    width:250px;
+    height:250px;
+}
+.pg2 h2 {
+    margin-top: 10px;
+}
+.rightsWeb{
+    font-size:13px;
+}
+}
+
+/* Mobile S*/
+@media (max-width: 320px){
+.pg1 h2 {
+    font-size: 25px;
+}
+.pg3 h2 {
+    font-size: 30px;
+}
+.prog {
+    width:200px;
+    height:200px;
+}
+.pg3 {
+    height:150vh;
+}
+.sectionContacts h2 {
+    font-size: 40px;
+}
+.rightsWeb {
+   font-size:12px;
+
+}
+.sectionContacts {
+    height: 310px;
+}
+.works li:nth-child(1),
+.works li:nth-child(2){
+    margin-right:15px;
+
 }
 }
