@@ -1,6 +1,4 @@
-html {
-    scroll-behavior: smooth;
-}
+
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 *{
     padding: 0%;
@@ -156,8 +154,67 @@ h3::selection {
 }
 
 
+/*Animations*/
+@keyframes scrollAnimation_up {
+    0% {
+        opacity:0;
+        transform: translateY(2000px);
+        scale: 3%
 
+    }
+    100% {
+        opacity: 1;
+        transform:translateY(0);
+        scale:100%
+    }
+}
+@keyframes scrollAnimation_up_name {
+    0% {
+        opacity:0;
+        transform: translateY(200px);
+        scale: 3%
 
+    }
+    100% {
+        opacity: 1;
+        transform:translateY(0);
+        scale:100%
+    }
+}
+@keyframes scrollAnimation_right {
+    0% {
+        opacity:0;
+        transform: translateX(200px);
+        
+
+    }
+    100% {
+        opacity: 1;
+        transform:translateX(0);
+       
+    }
+}
+
+.scrollAnimationUpName {
+    animation-name:scrollAnimation_up_name;
+    animation-timeline: view(95% auto);
+}
+
+.scrollAnimationUp {
+    animation-name: scrollAnimation_up;
+    animation-timeline: view(90% auto);
+    
+}
+
+.scrollAnimationRight {
+    animation-name: scrollAnimation_right;
+    animation-timeline: view(80% auto);
+}  
+
+.scrollAnimationUpWork{
+    animation-name:scrollAnimation_up_name;
+    animation-timeline: view(90% auto);
+}
 
 /* Page 01 */
 
@@ -197,6 +254,7 @@ p {
 .pg1 h2,
 .pg1 p {
     transform: translateY(-150px);
+    
 }
 
 .work-btn {
@@ -278,6 +336,7 @@ span {
 img {
     width: 639px;
     width: 639px;
+
 }
 
 .pg2 h3 {
